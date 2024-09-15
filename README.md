@@ -12,11 +12,26 @@ This Python script allows you to:
 ## Compatibility
 
 **The script works with all versions of the WeMod application, except for version 9.10.0.**
-
 | Version         | Status           |
 |-----------------|------------------|
-| All versions    | ✅ Supported      |
-| Version 9.10.0  | ❌ Not Supported  |
+| 4.0.7           | ✅ Supported      |
+| 4.0.8           | ✅ Supported      |
+| 4.0.9           | ✅ Supported      |
+| 4.0.10          | ✅ Supported      |
+| 4.0.11          | ✅ Supported      |
+| 4.0.12          | ✅ Supported      |
+| 4.0.13          | ✅ Supported      |
+| 5.0.0           | ✅ Supported      |
+| 5.0.1           | ✅ Supported      |
+| 5.0.2           | ✅ Supported      |
+| 5.0.3           | ✅ Supported      |
+| 5.0.4           | ✅ Supported      |
+| 5.0.5           | ✅ Supported      |
+| 7.0.0           | ✅ Supported      |
+| 8.3.0           | ✅ Supported      |
+| 9.0.0           | ❌ Not Supported  |
+| 9.10.0          | ❌ Not Supported  |
+
 
 ## Prerequisites
 
