@@ -101,4 +101,6 @@ For any questions or issues, please contact Hira on Discord: [vbvt].
 
 ---
 
+https://github.com/stochalt/Wemod-Premium-Unlocker/graphs/contributors
+
 Thank you for using **Wemod Premium Unlocker - Hira**! 🎉
