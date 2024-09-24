@@ -100,7 +100,9 @@ The script includes an integrity check to ensure it has not been modified. If th
 For any questions or issues, please contact Hira on Discord: [vbvt].
 
 ---
-
-https://github.com/stochalt/Wemod-Premium-Unlocker/graphs/contributors
+<br><br>
+<a href="https://github.com/stochalt/wemod-premium-unlocker/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=stochalt/wemod-premium-unlocker" />
+</a>
 
 Thank you for using **Wemod Premium Unlocker - Hira**! 🎉
