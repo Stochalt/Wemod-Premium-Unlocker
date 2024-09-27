@@ -28,6 +28,7 @@ This Python script allows you to:
 | 5.0.4           | ✅ Supported      |
 | 5.0.5           | ✅ Supported      |
 | 7.0.0           | ✅ Supported      |
+| 8.2.0           | ✅ Supported      | 
 | 8.3.0           | ✅ Supported      |
 | 9.0.0           | ❌ Not Supported  |
 | 9.10.0          | ❌ Not Supported  |
