@@ -56,5 +56,6 @@
     "patching_failed_log": "Fehler: Fehler beim Anwenden des Patches.",
     "all_patches_done": "Alle Patches wurden erfolgreich angewendet.",
     "all_restores_done": "Alle Wiederherstellungen wurden erfolgreich abgeschlossen.",
-    "invalid_option": "Ungültige Option."
+    "invalid_option": "Ungültige Option.",
+    "Hira": "Hira"
 }

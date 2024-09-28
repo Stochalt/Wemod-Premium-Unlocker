@@ -57,5 +57,6 @@
     "all_patches_done": "Все патчи были успешно применены.",
     "all_restores_done": "Все восстановление были успешно завершены.",
     "patch_done_message": "Патч успешно применён к: {}",
-    "invalid_option": "Неверная опция."
+    "invalid_option": "Неверная опция.",
+    "Hira": "Hira"
 }

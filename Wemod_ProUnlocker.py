@@ -87,6 +87,7 @@ def display_start_menu(language):
     os.system('cls' if os.name == 'nt' else 'clear')
     display_ascii_art()
     console.print(language['author'], style="yellow bold", justify="center")
+    console.print(language['Hira'], style="yellow bold", justify="center")
     console.print()
 
     info_table = Table(show_header=False, box=ROUNDED, expand=False, border_style="cyan")

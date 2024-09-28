@@ -56,5 +56,6 @@
     "patching_failed_log": "Error: Fallo en la aplicación del parche.",
     "all_patches_done": "Todos los parches se han aplicado con éxito.",
     "all_restores_done": "Todas las restauraciones se han completado con éxito.",
-    "invalid_option": "Opción inválida."
+    "invalid_option": "Opción inválida.",
+    "Hira": "Hira"
 }

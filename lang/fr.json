@@ -56,5 +56,6 @@
     "patching_failed_log": "Erreur: Échec de l'application du patch.",
     "all_patches_done": "Tous les patches ont été appliqués avec succès.",
     "all_restores_done": "Toutes les restaurations on été effectuée avec succès.",
-    "invalid_option": "Option invalide."
+    "invalid_option": "Option invalide.",
+    "Hira": "Hira"
 }
