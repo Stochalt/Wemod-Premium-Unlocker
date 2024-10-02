@@ -33,6 +33,8 @@ This Python script allows you to:
 | 9.0.0           | ❌ Not Supported  |
 | 9.10.0          | ❌ Not Supported  |
 
+## Old WeMod Version
+https://www.wingetgui.com/apps/WeMod-WeMod/8-2-0
 
 ## Prerequisites
 
