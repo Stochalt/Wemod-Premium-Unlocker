@@ -2,11 +2,13 @@ import os
 import shutil
 import glob
 import time
+from datetime import datetime
 import random
 import json
 from colorama import init
 from tqdm import tqdm
 from yaspin import yaspin
+import threading
 from yaspin.spinners import Spinners
 from rich.console import Console
 from rich.panel import Panel
@@ -18,7 +20,38 @@ import ctypes
 init(autoreset=True)
 console = Console()
 
-ctypes.windll.kernel32.SetConsoleTitleW("Wemod Premium Unlocker - Hira")
+github_url = "https://github.com/Stochalt/Wemod-Premium-Unlocker"
+
+
+current_time = ""
+
+
+def update_time():
+    global current_time
+    while True:
+        current_time = datetime.now().strftime("%H:%M:%S")
+        time.sleep(1)  
+
+
+def animate_console_title():
+    animated_title = "Wemod Premium Unlocker - Hira"
+
+    while True:
+        
+        for i in range(len(animated_title) + 1):
+            current_anim_title = animated_title[i:] + " " + animated_title[:i]  
+            ctypes.windll.kernel32.SetConsoleTitleW(f"{current_anim_title} | {github_url} | {current_time}")
+            time.sleep(0.2)
+
+        ctypes.windll.kernel32.SetConsoleTitleW(f"{animated_title} | {github_url} | {current_time}")
+        time.sleep(1)  
+
+
+time_thread = threading.Thread(target=update_time, daemon=True)
+time_thread.start()
+
+title_thread = threading.Thread(target=animate_console_title, daemon=True)
+title_thread.start()
 
 SUPPORTED_VERSIONS = {
     "4.0.7": "[Supported]",
@@ -40,7 +73,6 @@ SUPPORTED_VERSIONS = {
     "9.0.0": "[Not Supported]",
     "9.10.0": "[Not Supported]"
 }
-
 WEMOD_ASCII = """
 __        __                       _        
 \ \      / /__ _ __ ___   ___   __| |       
@@ -52,7 +84,6 @@ __        __                       _
 |  __/| | |  __/ | | | | | | |_| | | | | | |
 |_|   |_|  \___|_| |_| |_|_|\__,_|_| |_| |_| 
 """
-
 def choose_language():
     os.system('cls' if os.name == 'nt' else 'clear')
     console.print(Panel("[bold cyan]Select Language[/bold cyan]", title="Language Selection", border_style="bright_blue"), justify="center")
@@ -68,7 +99,7 @@ def choose_language():
     elif choice == "5":
         return 'ru'
     else:
-        return 'en'  # Default to English
+        return 'en' 
 
 def load_language(lang='en'):
     with open(f'lang/{lang}.json', 'r', encoding='utf-8') as file:
@@ -178,7 +209,6 @@ def patch_app(language):
 
         console.print(f"{language['found_version']} {version} ({version_status})", style="green" if version_status == "[Supported]" else "red")
 
-        # Suppression de la condition pour demander confirmation si non supporté
         if version_status == "[Not Supported]":
             console.print(f"[bold yellow]Continuing with non-supported version: {version}[/bold yellow]")
 
@@ -189,7 +219,6 @@ def patch_app(language):
         if not os.path.exists(backup_folder):
             os.makedirs(backup_folder)
             console.print(f"{language['backups_folder_created']} {backup_folder}", style="cyan")
-
         backup_path = os.path.join(backup_folder, f'app_backup_{version}.asar')
 
         try:
@@ -203,7 +232,6 @@ def patch_app(language):
                 console.print(language['patching'], style="yellow")
                 shutil.copy(source_path, destination_path)
                 
-                # Afficher le message de succès après le patch
                 console.print(language['patch_done_message'].format(destination_path), style="green")
             else:
                 console.print(language['error_patch_file_missing'], style="red")

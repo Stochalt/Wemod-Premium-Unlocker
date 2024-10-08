@@ -57,5 +57,6 @@
     "all_patches_done": "All patches have been successfully applied.",
     "all_restores_done": "All restores have been successfully completed.",
     "invalid_option": "Invalid option.",
-    "Hira": "Hira"
+    "Hira": "Hira",
+    "patch_done_message": "Patch completed successfully."
 }

@@ -57,5 +57,6 @@
     "all_patches_done": "Todos los parches se han aplicado con éxito.",
     "all_restores_done": "Todas las restauraciones se han completado con éxito.",
     "invalid_option": "Opción inválida.",
-    "Hira": "Hira"
+    "Hira": "Hira",
+    "patch_done_message": "Parche completado con éxito."
 }
