@@ -33,6 +33,8 @@ This Python script allows you to:
 | 9.0.0           | ❌ Not Supported  |
 | 9.10.0          | ❌ Not Supported  |
 
+## Old WeMod Version
+https://www.wingetgui.com/apps/WeMod-WeMod/8-2-0
 
 ## Prerequisites
 
@@ -92,7 +94,6 @@ The script includes an integrity check to ensure it has not been modified. If th
 
 ## Notes
 
-- **Ensure** that the `signature.txt` file is up-to-date and matches the current hash of the script.
 - **Modify** file paths and options according to your specific needs.
 - **Works with all versions of the WeMod application, except for version 9.10.0.** ⚠️
 
